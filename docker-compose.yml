@@ -1,0 +1,10 @@
+version: '3.7'
+services:
+  golang:
+    build:
+      context: ./
+      dockerfile: ./Dockerfile
+    volumes:
+      - '.:/go/src/golang'
+    ports:
+      - '8080:8080'
